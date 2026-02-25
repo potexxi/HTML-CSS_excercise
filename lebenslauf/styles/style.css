@@ -41,6 +41,7 @@ body{
 }
 
 #opening_button{
+    scroll-behavior: smooth;
     margin-top: 200px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 3em;
@@ -48,8 +49,9 @@ body{
     border: 0px solid transparent;
     border-radius: 50%;
     height: 3em;
-    animation: move 0.6s ease forwards;
-    animation-timeline: view();
+    animation: move linear forwards;
+    animation-timeline: scroll();
+    animation-range: 1em 35em;
 }
 
 #opening_button:hover{
@@ -220,7 +222,7 @@ p{
 
 @keyframes move{
     from { transform: translateY(0); }
-    to   { transform: translateY(500px); }
+    to   { transform: translateY(1500px); }
 }
 
 .footer{

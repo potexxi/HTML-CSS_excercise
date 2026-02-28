@@ -23,6 +23,12 @@ body{
     animation-range: 0em 35em;
 }
 
+#balken22{
+    margin-left: -1.3em; 
+    width: 106.4%; 
+    background-color: red;
+}
+
 .rand{
     width: 30%;
     height: auto;
@@ -272,6 +278,10 @@ p{
     }
     .links{
         width: auto;
+    }
+    #balken22{
+        margin-left: 3px;
+        background-color: yellow;
     }
 }
 

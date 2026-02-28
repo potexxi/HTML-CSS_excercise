@@ -15,12 +15,12 @@ body{
 
 .balken2{
     width:100%;
-    height: 55em;
+    height: 85em;
     background-color: #0f7dfa;
     transition: ease-in 0.2s;
     animation: fade linear forwards;
     animation-timeline: scroll();
-    animation-range: 1em 35em;
+    animation-range: 0em 35em;
 }
 
 .rand{
@@ -31,13 +31,13 @@ body{
 .opening{
     display: flex;
     justify-content: center;
-    height: 55em;
+    height: 85em;
     background-color: #0f7dfa;
     width: 98%;
     transition: ease-in 0.2s;
     animation: fade linear forwards;
     animation-timeline: scroll();
-    animation-range: 1em 35em;
+    animation-range: 0em 35em;
 }
 
 #opening_button{
@@ -48,6 +48,7 @@ body{
     width: 3em;
     border: 0px solid transparent;
     border-radius: 50%;
+    transition: ease-in 0.2s;
     height: 3em;
     animation: move linear forwards;
     animation-timeline: scroll();
@@ -171,20 +172,20 @@ p{
 }
 
 .bild_text{
-    width: 98%;
+    width: 45%;
     margin-top: 10px;
-    display: flex;
     max-width: 80em;
     background-color: #0745b8;
+    color: white;
 }
 
 .facts{
-    width: 98%;
+    width: 45%;
     max-width: 80em;
     margin-top: 15px;
     color: white;
     background-color: #0745b8;
-    height: 50em;
+    height: 26em;
 }
 
 .facts a{
@@ -193,7 +194,32 @@ p{
 
 
 #foto{
-    width: 150px;
+    margin-left: 5px;
+    width: auto;
+    max-width: 50%;
+    min-width: 150px;
+    height: auto;
+    max-height: 220px;
+}
+
+.informations{
+    display: flex;
+    justify-content: space-between;
+}
+
+.informations h1{
+    margin-left: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.5em;
+}
+
+.informations a{
+    margin-left: 15px;
+}
+
+.links{
+    height: 50em;
+    background-color:#0745b8;
 }
 
 @media (max-width: 1000px){

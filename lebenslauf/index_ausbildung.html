@@ -8,15 +8,16 @@
     <title>Lebenslauf</title>
 </head>
 <body>
-    <div class="rand"><div class="balken"></div></div>
+    <div class="rand"><div class="balken"></div><div class="balken2"></div></div>
     <div class="all">
+        <a class="back_button" href="#menu-bar"><i class="fa-solid fa-chevron-up"></i></a>
         <input type="checkbox" id="menu-toggle">
         <header>
-            <div class="menu-bar">
+            <div class="menu-bar" id="menu-bar">
                 <h1><a href="index.html">Maximilian Schreiter</a></h1>
                 <label for="menu-toggle" class="burger">≡</label>
                 <div class="menu-buttons">
-                    <a href="index.html" class="button">Ueber Mich</a>
+                    <a href="index.html" class="button">Über Mich</a>
                     <a href="index_ausbildung.html" class="button">Ausbildung</a>
                     <a href="index_freizeit.html" class="button">Freizeit</a>
                 </div>
@@ -24,17 +25,22 @@
         </header>
         <nav class="fullscreen-menu">
             <label for="menu-toggle" class="close">✕</label>
-            <a href="index.html" class="button">Ueber Mich</a>
+            <a href="index.html" class="button">Über Mich</a>
             <a href="index_ausbildung.html" class="button">Ausbildung</a>
             <a href="index_freizeit.html" class="button">Freizeit</a>
         </nav>
 
-        <div class="informations">
+        <div class="opening">
+            <h1>Ausbildung</h1>
+            <a href="#informations" style="cursor: none; height: 0px; scroll-behavior: smooth;"><button id="opening_button">Go</button></a>
+        </div>
+
+        <div class="informations" id="informations">
             <div class="facts" id="facts">
                 <h1>Sacré Coeur Riedenburg:</h1>
-                <a class="button" href="https://schulenriedenburg.at" target="_blank"><i class="fa-solid fa-school"></i> schulenriedenburg.at</a> <br>
+                <a class="button" href="https://schulenriedenburg.at" target="_blank"><i class="fa-solid fa-school"></i> https://schulenriedenburg.at</a> <br>
                 <h1>HTL Rankweil:</h1>
-                <a class="button" href="https://www.htl-rankweil.at" target="_blank"><i class="fa-solid fa-school"></i> htl-rankweil.at</a><br>
+                <a class="button" href="https://www.htl-rankweil.at" target="_blank"><i class="fa-solid fa-school"></i> https://www.htl-rankweil.at</a><br>
             </div>
             <div class="bild_text">
                 <h1>Welche Ausbildung habe ich?</h1>
@@ -48,12 +54,12 @@
             </div>
         </div>
         <div class="links">
-            <a href="index.html" class="button" style="margin-left: 15px;">Ueber Mich</a>
-            <a href="index_freizeit.html" class="button">Meine Freizeitaktivitaeten</a>
+            <a href="index.html" class="button" style="margin-left: 15px;">Über Mich</a>
+            <a href="index_freizeit.html" class="button">Meine Freizeitaktivitäten</a>
         </div>
         <div style="height: 10em;"></div>
     </div>
-    <div class="rand"><div class="balken"></div></div>
+    <div class="rand"><div class="balken"></div><div class="balken2"></div></div>
     <footer class="footer">© 2026 Maximilian Schreiter. Footer Text.</footer>
 </body>
 </html>

@@ -10,13 +10,14 @@
 <body>
     <div class="rand"><div class="balken"></div><div class="balken2"></div></div>
     <div class="all">
+        <a class="back_button" href="#menu-bar"><i class="fa-solid fa-chevron-up"></i></a>
         <input type="checkbox" id="menu-toggle">
         <header>
-            <div class="menu-bar">
+            <div class="menu-bar" id="menu-bar">
                 <h1><a href="index.html">Maximilian Schreiter</a></h1>
                 <label for="menu-toggle" class="burger">≡</label>
                 <div class="menu-buttons">
-                    <a href="index.html" class="button">Ueber Mich</a>
+                    <a href="index.html" class="button">Über Mich</a>
                     <a href="index_ausbildung.html" class="button">Ausbildung</a>
                     <a href="index_freizeit.html" class="button">Freizeit</a>
                 </div>
@@ -24,16 +25,17 @@
         </header>
         <nav class="fullscreen-menu">
             <label for="menu-toggle" class="close">✕</label>
-            <a href="index.html" class="button">Ueber Mich</a>
+            <a href="index.html" class="button">Über Mich</a>
             <a href="index_ausbildung.html" class="button">Ausbildung</a>
             <a href="index_freizeit.html" class="button">Freizeit</a>
         </nav>
         
         <div class="opening">
-            <a href="#facts" style="cursor: none; height: 0px; scroll-behavior: smooth;"><button id="opening_button">Start</button></a>
+            <h1>Über Mich</h1>
+            <a href="#informations" style="cursor: none; height: 0px; scroll-behavior: smooth;"><button id="opening_button">Go</button></a>
         </div>
 
-        <div class="informations">
+        <div class="informations" id="informations">
             <div class="facts" id="facts">
                 <h1>Daten und Links:</h1>
                 <a class="button" href="mailto:maximilian.schreiter@outlook.at">✉ maximilian.schreiter@outlook.at</a> <br>
@@ -45,7 +47,7 @@
                 <h1>Wer bin ich?</h1>
                 <div style="display: flex;">
                     <img id="foto" src="Foto.jpg">
-                    <p>Ich bin Schüler und besuche aktuell die HTL Rankweil. Besonders interessiere ich mich für Informatik und Programmierung. In meiner Freizeit programmiere ich eigene kleine Projekte, zum Beispiel Spiele oder Anwendungen mit Python und C#. Dabei probiere ich gerne neue Dinge aus und lerne selbstständig weiter. 
+                    <p>Ich bin Maximilian Schreiter und besuche aktuell die HTL Rankweil. Besonders interessiere ich mich für Informatik und Programmierung. In meiner Freizeit programmiere ich eigene kleine Projekte, zum Beispiel Spiele oder Anwendungen mit Python und C#. Dabei probiere ich gerne neue Dinge aus und lerne selbstständig weiter. 
                         Alle meine Projekte finden man auf meinem <a class="button" href="https://github.com/potexxi" target="_blank" style="font-size: 1.3em; margin-left: 0px;">GitHub Profil.</a>
                     </p>
                 </div>
@@ -53,7 +55,7 @@
         </div>
         <div class="links">
             <a href="index_ausbildung.html" class="button" style="margin-left: 15px;">Meine Ausbildung</a>
-            <a href="index_freizeit.html" class="button">Meine Freizeitaktivitaeten</a>
+            <a href="index_freizeit.html" class="button">Meine Freizeitaktivitäten</a>
         </div>
         <div style="height: 10em;"></div>
     </div>

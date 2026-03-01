@@ -31,11 +31,32 @@ body{
     height: auto;
 }
 
-.opening{
+.back_button{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #012466;
+    margin-top: 91vh;
+    margin-left: 74vw;
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 40px;
+    z-index: 9998;
+    position: fixed;
+    font-size: 1.8em;
+    text-decoration: none;
+    color: white;
+}
+
+.opening{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 85em;
-    background-color: #0f7dfa;
+    background-color:#0f7dfa;
     width: 100%;
     transition: ease-in 0.2s;
     animation: fade linear forwards;
@@ -43,16 +64,27 @@ body{
     animation-range: 0em 35em;
 }
 
+.opening h1{
+    color: white;
+    font-size: 5em;
+    margin-top: 200px;
+    height: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 #opening_button{
     scroll-behavior: smooth;
-    margin-top: 200px;
+    margin-top: 50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 3em;
-    width: 3em;
+    font-size: 2em;
+    width: 4em;
     border: 0px solid transparent;
-    border-radius: 50%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     transition: ease-in 0.2s;
-    height: 3em;
+    height: 2em;
     animation: move linear forwards;
     animation-timeline: scroll();
     animation-range: 1em 35em;
@@ -166,8 +198,6 @@ p{
     animation: none;
 }
 
-
-
 .fullscreen-menu a, label{
     color: white;
     font-size: 1.5em;
@@ -238,6 +268,7 @@ p{
     margin-left: 15px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2.5em;
+    color: white;
 }
 
 .informations a{
@@ -257,6 +288,7 @@ p{
     margin-top: 3.8em;
     font-size: 1.7em;
     transition: ease-in 0.2s;
+    font-weight: bold;
 }
 
 .bild_text:hover, .facts:hover, .links:hover{

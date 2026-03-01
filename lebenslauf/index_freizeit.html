@@ -8,15 +8,16 @@
     <title>Lebenslauf</title>
 </head>
 <body>
-    <div class="rand"><div class="balken"></div></div>
+    <div class="rand"><div class="balken"></div><div class="balken2"></div></div>
     <div class="all">
+        <a class="back_button" href="#menu-bar"><i class="fa-solid fa-chevron-up"></i></a>
         <input type="checkbox" id="menu-toggle">
         <header>
-            <div class="menu-bar">
+            <div class="menu-bar" id="menu-bar">
                 <h1><a href="index.html">Maximilian Schreiter</a></h1>
                 <label for="menu-toggle" class="burger">≡</label>
                 <div class="menu-buttons">
-                    <a href="index.html" class="button">Ueber Mich</a>
+                    <a href="index.html" class="button">Über Mich</a>
                     <a href="index_ausbildung.html" class="button">Ausbildung</a>
                     <a href="index_freizeit.html" class="button">Freizeit</a>
                 </div>
@@ -24,17 +25,22 @@
         </header>
         <nav class="fullscreen-menu">
             <label for="menu-toggle" class="close">✕</label>
-            <a href="index.html" class="button">Ueber Mich</a>
+            <a href="index.html" class="button">Über Mich</a>
             <a href="index_ausbildung.html" class="button">Ausbildung</a>
             <a href="index_freizeit.html" class="button">Freizeit</a>
         </nav>
 
-        <div class="informations">
+        <div class="opening">
+            <h1>Freizeit</h1>
+            <a href="#informations" style="cursor: none; height: 0px; scroll-behavior: smooth;"><button id="opening_button">Go</button></a>
+        </div>
+
+        <div class="informations" id="informations">
             <div class="facts" id="facts">
                 <h1>Judo:</h1>
-                <a class="button" href="https://www.judoclub-hohenems.at" target="_blank"><i class="fa-solid fa-hand-fist"></i> Judo-Hohenems</a> <br>
+                <a class="button" href="https://www.judoclub-hohenems.at" target="_blank"><i class="fa-solid fa-hand-fist"></i> https://www.judoclub-hohenems.at</a> <br>
                 <h1>Softwareprojekte:</h1>
-                <a class="button" href="https://github.com/potexxi" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a><br>
+                <a class="button" href="https://github.com/potexxi" target="_blank"><i class="fa-brands fa-github"></i> https://github.com/potexxi</a><br>
                 <h1>Gaming:</h1>
                 <a class="button" href="https://www.ubisoft.com/de-de/game/rainbow-six/siege" target="_blank"><i class="fa-brands fa-steam"></i> Rainbow Six Siege</a><br>
                 <a class="button" href="https://www.minecraft.net/de-de/store/minecraft-java-bedrock-edition-pc?tabs=%7B" target="_blank"><i class="fa-solid fa-server"></i> Minecraft Server Hosting</a><br>
@@ -44,19 +50,18 @@
                 <h1>Was mache ich?</h1>
                 <div style="display: flex;">
                     <p>Ich bin seit mehreren Jahren aktives Mitglied beim UJC Hohenems. Ein Jahr davon habe ich im Leistungssport trainiert, mit höherer Trainingsintensität und Wettkampfvorbereitung. Judo stärkt meine Disziplin und Belastbarkeit.
-
-Zusätzlich betreibe ich eigene Game-Server, unter anderem für Minecraft und Rust. Dabei kümmere ich mich um Einrichtung, Konfiguration, Wartung und Performanceoptimierung.</a>
+                        Zusätzlich betreibe ich eigene Game-Server, unter anderem für Minecraft und Rust. Dabei kümmere ich mich um Einrichtung, Konfiguration, Wartung und Performanceoptimierung. Auch Programmieren zählt zu meinen Stärken, wie man in meinen GitHub-Repos sieht.</a>
                     </p>
                 </div>
             </div>
         </div>
         <div class="links">
-            <a href="index.html" class="button" style="margin-left: 15px;">Ueber Mich</a>
-            <a href="index_freizeit.html" class="button">Meine Freizeitaktivitaeten</a>
+            <a href="index.html" class="button" style="margin-left: 15px;">Über Mich</a>
+            <a href="index_freizeit.html" class="button">Meine Freizeitaktivitäten</a>
         </div>
         <div style="height: 10em;"></div>
     </div>
-    <div class="rand"><div class="balken"></div></div>
+    <div class="rand"><div class="balken"></div><div class="balken2"></div></div>
     <footer class="footer">© 2026 Maximilian Schreiter. Footer Text.</footer>
 </body>
 </html>

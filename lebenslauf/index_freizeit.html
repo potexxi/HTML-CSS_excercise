@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style_freizeit.css">
-    <title>Freizeit</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Lebenslauf</title>
 </head>
 <body>
+    <div class="rand"><div class="balken"></div><div class="balken2"></div></div>
     <div class="all">
         <input type="checkbox" id="menu-toggle">
         <header>
@@ -23,11 +25,35 @@
         <nav class="fullscreen-menu">
             <label for="menu-toggle" class="close">✕</label>
             <a href="index.html" class="button">Ueber Mich</a>
-            <a href="#" class="button">Ausbildung</a>
-            <a href="#" class="button">Freizeit</a>
+            <a href="index_ausbildung.html" class="button">Ausbildung</a>
+            <a href="index_freizeit.html" class="button">Freizeit</a>
         </nav>
 
-
+        <div class="informations">
+            <div class="facts" id="facts">
+                <h1>Daten und Links:</h1>
+                <a class="button" href="mailto:maximilian.schreiter@outlook.at">✉ maximilian.schreiter@outlook.at</a> <br>
+                <a class="button" href="tel:+436645738450">✆ +43 664 5738450</a><br>
+                <a class="button" target="_blank" href="https://www.google.com/maps/place/Kirlastraße+45,+6840+Götzis/@47.3342778,9.6278578,17z/data=!3m1!4b1!4m6!3m5!1s0x479b3e6bfcd11c5f:0x57965b9ce1e153ae!8m2!3d47.3342742!4d9.6304327!16s%2Fg%2F11c2428r5q?entry=ttu&g_ep=EgoyMDI2MDIxNy4wIKXMDSoASAFQAw%3D%3D">⌂ Kirlastrasse 45, 6840 Goetzis</a><br>
+                <a class="button" target="_blank" href="https://github.com/potexxi"> <i class="fa-brands fa-github"></i> https://github.com/potexxi</a>
+            </div>
+            <div class="bild_text">
+                <h1>Ueber mich:</h1>
+                <div style="display: flex;">
+                    <img id="foto" src="Foto.jpg">
+                    <p>Ich bin Schüler und besuche aktuell die HTL Rankweil. Besonders interessiere ich mich für Informatik und Programmierung. In meiner Freizeit programmiere ich eigene kleine Projekte, zum Beispiel Spiele oder Anwendungen mit Python und C#. Dabei probiere ich gerne neue Dinge aus und lerne selbstständig weiter. 
+                        Alle meine Projekte finden man auf meinem <a class="button" href="https://github.com/potexxi" target="_blank" style="font-size: 1.3em; margin-left: 0px;">GitHub Profil.</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="links">
+            <a href="index_ausbildung.html" class="button" style="margin-left: 15px;">Meine Ausbildung</a>
+            <a href="index_freizeit.html" class="button">Meine Freizeitaktivitaeten</a>
+        </div>
+        <div style="height: 10em;"></div>
     </div>
+    <div class="rand"><div class="balken"></div><div class="balken2"></div></div>
+    <footer class="footer">© 2026 Maximilian Schreiter. Footer Text.</footer>
 </body>
 </html>

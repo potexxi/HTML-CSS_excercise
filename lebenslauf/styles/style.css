@@ -1,10 +1,13 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     display: flex;
     height: auto;
     width: 100%;
     margin: 0px;
     padding: 0px;
-    scroll-behavior: smooth;
 }
 
 .balken{
@@ -143,6 +146,7 @@ p{
     justify-content: center;
     align-items: center;
     gap: 20px;
+    z-index: 9998;
 
     opacity: 0;
     pointer-events: none;
@@ -155,10 +159,14 @@ p{
     pointer-events: all;
 }
 
-#menu-toogle:checked ~ .opening{
-    opacity: 0;
+#menu-toggle:checked ~ .opening{
+    animation: none;
+    opacity: 1;
+    pointer-events: none;
     animation: none;
 }
+
+
 
 .fullscreen-menu a, label{
     color: white;
@@ -288,10 +296,12 @@ p{
         align-items: center;
     }
     .bild_text{
+        margin-top: 3em;
         width: auto;
     }
     .links{
         width: auto;
+        margin-top: 1.8em;
     }
 }
 
@@ -317,4 +327,5 @@ p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: rgb(54, 54, 54);
     bottom: 0;
+    z-index: 9999;
 }

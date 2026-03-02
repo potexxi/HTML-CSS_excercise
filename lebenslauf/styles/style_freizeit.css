@@ -326,10 +326,12 @@ p{
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: 35em;
     }
     .bild_text{
         margin-top: 3em;
         width: auto;
+        height: 20em;
     }
     .links{
         width: auto;

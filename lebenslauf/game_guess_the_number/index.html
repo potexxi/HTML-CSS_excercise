@@ -4,21 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zahlenraten</title>
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
-<body>
-    <h1>Zahlenraten</h1>
-    <p>Versuche, die Zufallszahl zu erraten!</p>
-    <p id="outputTime">Zeit: 00:00</p>
+<body style="display: flex; flex-direction: column;">
+    <input type="checkbox" id="menu-toggle">
+    <header>
+        <div class="menu-bar" id="menu-bar">
+            <h1><a href="index.html">Maximilian Schreiter</a></h1>
+            <label for="menu-toggle" class="burger">≡</label>
+            <div class="menu-buttons">
+                <a href="../index.html" class="button">Über Mich</a>
+                <a href="../index_ausbildung.html" class="button">Ausbildung</a>
+                <a href="../index_freizeit.html" class="button">Freizeit</a>
+            </div>
+        </div>
+    </header>
+    <nav class="fullscreen-menu">
+        <label for="menu-toggle" class="close">✕</label>
+        <a href="../index.html" class="button">Über Mich</a>
+        <a href="../index_ausbildung.html" class="button">Ausbildung</a>
+        <a href="../index_freizeit.html" class="button">Freizeit</a>
+    </nav>
+    <br>
+    
     <div>
-        <label>Dein Tipp:</label>
-        <input type="number" id="input">
-        <button onclick="checkNumber()" id="btnCheck">Check</button>
+        <h1 style="color: black;">Zahlenraten</h1>
+        <p style="color: black;">Versuche, die Zufallszahl zu erraten!</p>
+        <p id="outputTime" style="color: black;">Zeit: 00:00</p>
+        <div>
+            <label style="color: black;">Dein Tipp:</label>
+            <input type="number" id="input" style="color: black;">
+            <button style="color: black;" onclick="checkNumber()" id="btnCheck">Check</button>
 
-        <p id="outputResult"></p>
-        <p id="outputCount"></p>
+            <p style="color: black;" id="outputResult"></p>
+            <p style="color: black;" id="outputCount"></p>
 
-        <button onclick="reset()">Neu beginnen</button>
-        <script src="script.js"></script>
+            <button style="color: black;" onclick="reset()">Neu beginnen</button>
+            <script src="script.js"></script>
+        </div>
     </div>
 </body>
 </html>

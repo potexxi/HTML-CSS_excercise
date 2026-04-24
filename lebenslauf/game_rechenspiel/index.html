@@ -6,7 +6,27 @@
     <link rel="stylesheet" href="style.css">
     <title>Rechenspiel</title>
 </head>
-<body>
+<body style="display: flex; flex-direction: column;">
+
+    <input type="checkbox" id="menu-toggle">
+    <header>
+        <div class="menu-bar" id="menu-bar">
+            <h1><a href="index.html">Maximilian Schreiter</a></h1>
+            <label for="menu-toggle" class="burger">≡</label>
+            <div class="menu-buttons">
+                <a href="../index.html" class="button">Über Mich</a>
+                <a href="../index_ausbildung.html" class="button">Ausbildung</a>
+                <a href="../index_freizeit.html" class="button">Freizeit</a>
+            </div>
+        </div>
+    </header>
+    <nav class="fullscreen-menu">
+        <label for="menu-toggle" class="close">✕</label>
+        <a href="../index.html" class="button">Über Mich</a>
+        <a href="../index_ausbildung.html" class="button">Ausbildung</a>
+        <a href="../index_freizeit.html" class="button">Freizeit</a>
+    </nav>
+
     <div id="all">
         <h1>Rechenspiel</h1>
         <div id="input">

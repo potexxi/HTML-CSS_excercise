@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rechenspiel</title>
+</head>
+<body>
+    <div id="all">
+        <h1>Rechenspiel</h1>
+        <div id="input">
+            <label>Wie viele Runden? </label>
+            <input class="input" type="number" id="inputRounds">
+            <br>
+            <label>Zahlenraum bis?</label>
+            <input class="input" type="number" id="inputMaxNumber">
+            <br>
+            <button class="button" id="buttonplus" onclick="ButtonPlus()">+</button>
+            <button class="button"  id="buttonminus" onclick="ButtonMinus()">-</button>
+            <button class="button"  id="buttonrandom" onclick="ButtonRandom()">?</button>
+            <br>
+            <button class="button"  id="buttonStart" onclick="Start()">Start</button>
+            <button class="button"  id="buttonReset" onclick="Reset()">Reset</button>
+        </div>
+        <div id="game">
+            <output id="outputRounds"></output>
+            <br>
+            <output id="outputCorrect"></output>
+            <br>
+            <output id="outputFirst"></output>
+            <output id="outputSign"></output>
+            <output id="outputSecond"></output>
+            <label id="label">=</label>
+            <input class="input" type="number" id="inputResult">
+            <button class="button" id="buttoncheck" onclick="Check()">Check</button>
+            <output id="outputResult"></output>
+            <br>
+            <output id="outputFeedback"></output>
+            <div id="container"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

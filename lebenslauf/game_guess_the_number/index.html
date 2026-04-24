@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahlenraten</title>
+</head>
+<body>
+    <h1>Zahlenraten</h1>
+    <p>Versuche, die Zufallszahl zu erraten!</p>
+    <p id="outputTime">Zeit: 00:00</p>
+    <div>
+        <label>Dein Tipp:</label>
+        <input type="number" id="input">
+        <button onclick="checkNumber()" id="btnCheck">Check</button>
+
+        <p id="outputResult"></p>
+        <p id="outputCount"></p>
+
+        <button onclick="reset()">Neu beginnen</button>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>

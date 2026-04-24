@@ -1,0 +1,73 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(21, 103, 255);;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#all h1{
+    font-size: 4em;
+}
+
+#container{
+    width: 100px;
+    height: 100px;
+}
+
+#all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    background-color: rgb(162, 199, 255);
+    border-radius: 30px;
+    font-size: 1.5em;
+}
+
+.button{
+    font-size: 1em;
+}
+
+.input{
+    font-size: 0.8em;
+}
+
+#buttonplus{
+    width: 32.5%;
+    margin-top: 15px;
+}
+
+#buttonminus{
+    width: 32.5%;
+}
+
+#buttonrandom{
+    width: 32.4%;
+}
+
+#buttonStart{
+    width: 49.5%;
+    margin-top: 20px;
+}
+
+#buttonReset{
+    width: 49%;
+}
+
+#inputRounds{
+    margin-left: 20px;
+}
+
+#inputMaxNumber{
+    margin-left: 39px;
+}
+
+#container{
+    margin-left: 20%;
+    height: 100px;
+}

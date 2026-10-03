@@ -1,0 +1,11 @@
+[
+    {
+        "id": "badtrip",
+        "img": "pictures/badtrip.jpg",
+        "title": "Bad Trip",
+        "author": "Kitao Sakurai",
+        "description": "Die zwei besten Freunde Chris Carey und Bud Malone möchten nach New York City reisen. Dafür leihen sie sich das rosafarbene Auto von Buds Schwester Trina, ohne ihre Erlaubnis. Als sie davon erfährt, macht sie sich auf die Jagd nach den beiden Männern. Versteckte Kameras zeigen, wie Chris und Bud an ahnungslosen Fremden Streiche spielen und vor Trina fliehen. Später verliebt sich Chris in Michaela Conlin, die eine dieser Fremden zu sein scheint.",
+        "available": false,
+        "age": "16+"
+    }
+]

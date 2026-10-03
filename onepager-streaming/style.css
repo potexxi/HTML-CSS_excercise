@@ -1,12 +1,85 @@
+body{
+    background-color: #7A7A7A;
+}
+
+.btn-primary{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-color: white;
+}
+
 #background{
+    margin-top: 5%;
     height: 95vh;
     width: 92vw;
     background:
         linear-gradient(
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 1)
         ),
         url("pictures/badtrip.jpg");
     background-size: cover;
     color: white;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+#background:hover{
+    background:
+    linear-gradient(
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 1)
+    ),
+    url("pictures/badtrip.jpg");
+    background-size: cover;
+    height: 96vh;
+    width: 93vw;
+    margin-left: -0.5%;
+}
+
+#badtrip{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#header{
+    position: fixed;
+    z-index: 9997;
+    width: 100%;
+}
+
+#popup{
+    position: fixed;
+    width: 70vw;
+    margin-top: 10%;
+    margin-left: 15%;
+    height: 60%;
+    background-color: #303030;
+    color: white;
+    z-index: 9999;
+    opacity: 1;
+}
+
+#popup_background{
+    background:
+    linear-gradient(
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.8)
+    );
+    pointer-events: none;
+    opacity: 0;
+    z-index: 9998;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+
+@media (max-width: 1200px) {
+    #popup{
+        height: 80%;
+    }
 }

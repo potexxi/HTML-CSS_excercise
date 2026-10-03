@@ -78,6 +78,11 @@ body{
     position: fixed;
 }
 
+.card{
+    background-color: #333333;
+    color: white;
+}
+
 @media (max-width: 1200px) {
     #popup{
         height: 80%;

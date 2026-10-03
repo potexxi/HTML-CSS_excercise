@@ -30,7 +30,7 @@ function ShowPopup(movie){
     popup_p1.innerHTML = movie.description;
     popup_p2.innerHTML = movie.age;
     popup_p3.innerHTML = movie.author;
-    if(!movie.button){
+    if(!movie.available){
         popup_a1.innerHTML = "+ Vormerken";
         popup_a2.style.opacity = 0;
     }

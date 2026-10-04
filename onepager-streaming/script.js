@@ -47,3 +47,27 @@ function HidePopup(){
     popup_background.style.opacity = 0;
     popup_background.style.pointerEvents = "none";
 }
+
+// Von KI, weil eigentlich wollte ich keine search haben. aber mir war langweilig
+// ich habe das aussehen gemacht und nur diese funktion von KI
+function Search(event){
+    event.preventDefault(); // verhindert Seiten-Neuladen
+
+    let text = document.getElementById("search_input").value.toLowerCase();
+    if(!text) return;
+
+    // Alle Elemente durchsuchen
+    let elements = document.querySelectorAll("h1, h2, h3, p, a, .card-title");
+
+    for(let el of elements){
+        if(el.innerText.toLowerCase().includes(text)){
+            el.scrollIntoView({ behavior: "smooth", block: "center" });
+            el.style.backgroundColor = "gray";
+
+            setTimeout(() => el.style.backgroundColor = "", 1500);
+            return;
+        }
+    }
+
+    alert("Nichts gefunden.");
+}

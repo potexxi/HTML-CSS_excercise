@@ -9,6 +9,17 @@ body{
     border-color: white;
 }
 
+.row{
+    margin-top: 2%;
+}
+
+.title{
+    font-size: 3em;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    font-weight: bold;
+}
+
 #background{
     margin-top: 5%;
     height: 95vh;

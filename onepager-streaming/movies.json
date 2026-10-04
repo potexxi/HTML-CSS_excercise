@@ -142,5 +142,86 @@
         "description": "Jasper, der schlechteste Schüler an der Postbotenakademie, wird auf einer eiskalten Insel in der Nähe des Nordpols stationiert. Die Inselbewohner haben jedoch keine Zeit, Briefe zu schreiben, weil sie mit langjährigen Familienfehden beschäftigt sind. Als Jasper einen alten Außenseiter mit einem besonderen Talent für das Schnitzen von Holzspielzeug trifft, hat er eine revolutionäre Idee. Die Weihnachtslegende beginnt.",
         "available": true,
         "age": "6+"
+    },
+    {
+        "id": "hausdesgeldes",
+        "img": "pictures/hausdesgeldes.jpg",
+        "title": "Haus des Geldes",
+        "author": "Álex Pina",
+        "description": "Ein Professor bereitet akribisch einen spektakulären Überfall auf die Banknotendruckerei und Münzprägeanstalt Spaniens vor. Seine acht Kumpane sollen ihm dabei helfen, seinen Plan perfekt auszuführen und die Polizei in die Irre zu führen.",
+        "available": true,
+        "age": "16+"
+    },
+    {
+        "id": "iceage1",
+        "img": "pictures/iceage1.jpg",
+        "title": "Ice Age",
+        "author": "Chris Wedge",
+        "description": "In der Eiszeit schließen sich das Mammut Manny, das Faultier Sid und der Säbelzahntiger Diego zusammen, um ein Menschenbaby sicher zu seiner Familie zurückzubringen. Auf ihrer Reise müssen sie nicht nur die Gefahren der Natur überstehen, sondern auch lernen, ein echtes Team zu werden.",
+        "available": true,
+        "age": "6+"
+    },
+    {
+        "id": "iceage2",
+        "img": "pictures/iceage2.jpg",
+        "title": "Ice Age 2 – Jetzt taut’s",
+        "author": "Carlos Saldanha",
+        "description": "Die Eiszeit geht zu Ende und die Welt beginnt zu schmelzen. Manny, Sid und Diego müssen die Tiere warnen und einen sicheren Ort erreichen, bevor eine gigantische Flut alles überschwemmt. Dabei trifft Manny auf Ellie, ein Mammut, das glaubt, ein Opossum zu sein.",
+        "available": true,
+        "age": "6+"
+    },
+    {
+        "id": "iceage3",
+        "img": "pictures/iceage3.jpg",
+        "title": "Ice Age 3 – Die Dinosaurier sind los",
+        "author": "Carlos Saldanha",
+        "description": "Sid wird von Dinosauriern entführt, nachdem er drei Eier gefunden und ausgebrütet hat. Manny, Ellie und Diego folgen ihm in eine geheime unterirdische Welt voller Dinosaurier. Dort treffen sie auf den exzentrischen Wiesel-Abenteurer Buck, der ihnen hilft, Sid zu retten.",
+        "available": true,
+        "age": "6+"
+    },
+    {
+        "id": "iceage5",
+        "img": "pictures/iceage5.jpg",
+        "title": "Ice Age 5 – Kollision voraus!",
+        "author": "Mike Thurmeier",
+        "description": "Scrats Jagd nach seiner Eichel löst eine kosmische Kettenreaktion aus, die einen Asteroiden auf die Erde zurasen lässt. Manny, Sid, Diego und ihre Freunde müssen eine Lösung finden, um die drohende Katastrophe zu verhindern. Dabei treffen sie auf neue Charaktere und schräge Kulturen.",
+        "available": true,
+        "age": "6+"
+    },
+    {
+        "id": "therain",
+        "img": "pictures/therain.jpg",
+        "title": "The Rain",
+        "author": "Jannik Tai Mosholt",
+        "description": "Ein tödlicher Regen löscht fast die gesamte Bevölkerung Skandinaviens aus. Die Geschwister Simone und Rasmus überleben in einem Bunker und wagen sich Jahre später hinaus, um Antworten zu finden. Dabei treffen sie auf andere Überlebende und müssen erkennen, dass Rasmus eine besondere Rolle in der Katastrophe spielt.",
+        "available": true,
+        "age": "16+"
+    },
+    {
+        "id": "aliceinborderland",
+        "img": "pictures/aliceinborderland.jpg",
+        "title": "Alice in Borderland",
+        "author": "Shinsuke Sato",
+        "description": "Der Gamer Arisu und seine Freunde finden sich plötzlich in einer verlassenen Version Tokios wieder. Um zu überleben, müssen sie brutale Spiele absolvieren, die Intelligenz, Teamwork und Mut fordern. Während die Spiele immer tödlicher werden, versucht Arisu herauszufinden, wer hinter der neuen Welt steckt.",
+        "available": true,
+        "age": "16+"
+    },
+    {
+        "id": "sexeducation",
+        "img": "pictures/sexeducation.jpg",
+        "title": "Sex Education",
+        "author": "Laurie Nunn",
+        "description": "Der schüchterne Teenager Otis lebt mit seiner Mutter, einer Sextherapeutin, zusammen. Als Mitschülerin Maeve erkennt, dass Otis dank seiner Mutter erstaunlich viel über Sexualität weiß, gründen die beiden eine geheime Beratungsstelle an ihrer Schule. Chaos, Humor und echte Gefühle sind vorprogrammiert.",
+        "available": true,
+        "age": "16+"
+    },
+    {
+        "id": "snowpiercer",
+        "img": "pictures/snowpiercer.jpg",
+        "title": "Snowpiercer",
+        "author": "Graeme Manson",
+        "description": "Nach einer globalen Eiszeit überlebt die Menschheit in einem gigantischen Zug, der ununterbrochen die Erde umrundet. Die Wagen sind streng nach Klassen getrennt, was zu Konflikten und Aufständen führt. Während die Ressourcen schwinden, wird der Zug zum Schauplatz politischer Intrigen und moralischer Entscheidungen.",
+        "available": true,
+        "age": "16+"
     }
 ]

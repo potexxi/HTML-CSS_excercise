@@ -12,7 +12,7 @@
     <!--PopUp-->
     <div id="popup_background" onclick="HidePopup()">
         <div class="card" id="popup" onclick="event.stopPropagation()">
-            <button onclick="HidePopup()" type="button" class="btn-close" aria-label="Close" style="font-size: 2em; position: fixed; height: 4%; align-items: center; justify-content: center; display: flex; right: 15%;"></button>
+            <button onclick="HidePopup()" type="button" class="btn-close" id="button_close" aria-label="Close" style="font-size: 2em; position: fixed; height: 4%; align-items: center; justify-content: center; display: flex; right: 15%;"></button>
             <img id="popup_img" src="" style="height: 40%; object-fit: cover; object-position: center;" class="card-img-top" alt="...">
             <div class="card-body">
                 <h1 id="popup_h1" class="card-title"></h1>
@@ -37,13 +37,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#" style="font-size: 1.3em;">Startseite</a>
+            <a class="nav-link active text-animation" aria-current="page" href="#">Startseite</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#new" style="font-size: 1.3em;">Filme</a>
+            <a class="nav-link active text-animation" aria-current="page" href="#new">Filme</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#series" style="font-size: 1.3em;">Serien</a>
+            <a class="nav-link active text-animation" aria-current="page" href="#series">Serien</a>
             </li>
             <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 1.3em;">
@@ -69,9 +69,9 @@
 
     <!--First Startscreen-->
     <div id="badtrip">
-        <div class="card" style="width: 90vw; border-color: transparent; background-color: #7A7A7A;">
+        <div class="card" style="width: 90vw; border-color: transparent; background-color: transparent;">
             <div id="background">
-                <div style="margin-top: 20%; margin-left: 5%;">
+                <div style="margin-top: 30vh; margin-left: 5%;">
                     <h1 class="card-title" style="font-size: 4em; font-weight: bold;">Bad Trip</h1>
                     <p class="card-text" style="font-size: 1.3em;">🕭 Ab 22. Oktober</p>
                     <a class="btn btn-primary" style="font-size: 1.8em;">+ Vormerken</a>
@@ -89,44 +89,44 @@
                 <h1 class="title">Neues</h1>
                 <!--First Row-->
                 <div class="col-sm">
-                    <div class="card" style="width: 22rem;">
+                    <div class="card movie">
                         <img src="pictures/armyofdead.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title" style="font-size: 1.5em;">Army of the Dead</h5>
-                            <a href="#" class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
+                            <a class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
                             <a class="btn btn-secondary" style="font-size: 1.2em;" onclick="ShowPopup(movies['armyofdead'])">ⓘ Mehr Infos</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-sm">
-                    <div class="card" style="width: 22rem;">
+                    <div class="card movie">
                         <img src="pictures/armyofthieves.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title" style="font-size: 1.5em;">Army of Thieves</h5>
-                            <a href="#" class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
+                            <a class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
                             <a class="btn btn-secondary" style="font-size: 1.2em;" onclick="ShowPopup(movies['armyofthieves'])">ⓘ Mehr Infos</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-sm">
-                    <div class="card" style="width: 22rem;">
+                    <div class="card movie">
                         <img src="pictures/birdbox.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title" style="font-size: 1.5em;">Bird Box</h5>
-                            <a href="#" class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
+                            <a class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
                             <a class="btn btn-secondary" style="font-size: 1.2em;" onclick="ShowPopup(movies['birdbox'])">ⓘ Mehr Infos</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-sm">
-                    <div class="card" style="width: 22rem;">
+                    <div class="card movie">
                         <img src="pictures/caveman.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title" style="font-size: 1.5em;">Caveman</h5>
-                            <a href="#" class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
+                            <a  class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
                             <a class="btn btn-secondary" style="font-size: 1.2em;" onclick="ShowPopup(movies['caveman'])">ⓘ Mehr Infos</a>
                         </div>
                     </div>
@@ -138,44 +138,44 @@
             <div class="row gx-0">
                 <h1 class="title">Derzeit sehr beliebt</h1>
                 <div class="col-sm">
-                    <div class="card" style="width: 22rem;">
+                    <div class="card movie">
                         <img src="pictures/claus.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title" style="font-size: 1.5em;">Claus</h5>
-                            <a href="#" class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
+                            <a class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
                             <a class="btn btn-secondary" style="font-size: 1.2em;" onclick="ShowPopup(movies['claus'])">ⓘ Mehr Infos</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-sm">
-                    <div class="card" style="width: 22rem;">
+                    <div class="card movie">
                         <img src="pictures/dontlookup.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title" style="font-size: 1.5em;">Don't look up</h5>
-                            <a href="#" class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
+                            <a class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
                             <a class="btn btn-secondary" style="font-size: 1.2em;" onclick="ShowPopup(movies['dontlookup'])">ⓘ Mehr Infos</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-sm">
-                    <div class="card" style="width: 22rem;">
+                    <div class="card movie">
                         <img src="pictures/enolaholmes.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title" style="font-size: 1.5em;">Enola Holmes</h5>
-                            <a href="#" class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
+                            <a class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
                             <a class="btn btn-secondary" style="font-size: 1.2em;" onclick="ShowPopup(movies['enolaholmes'])">ⓘ Mehr Infos</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-sm">
-                    <div class="card" style="width: 22rem;">
+                    <div class="card movie">
                         <img src="pictures/extraction.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title" style="font-size: 1.5em;">Extraction</h5>
-                            <a href="#" class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
+                            <a class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
                             <a class="btn btn-secondary" style="font-size: 1.2em;" onclick="ShowPopup(movies['extraction'])">ⓘ Mehr Infos</a>
                         </div>
                     </div>
@@ -186,40 +186,40 @@
             <div class="row gx-0">
                 <h1 class="title">Von der Kritik sehr gelobt</h1>
                 <div class="col-sm">
-                    <div class="card" style="width: 22rem;">
+                    <div class="card movie">
                         <img src="pictures/murdermystery.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title" style="font-size: 1.5em;">Murder Mystery</h5>
-                            <a href="#" class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
+                            <a class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
                             <a class="btn btn-secondary" style="font-size: 1.2em;" onclick="ShowPopup(movies['murdermystery'])">ⓘ Mehr Infos</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-sm">
-                    <div class="card" style="width: 22rem;">
+                    <div class="card movie">
                         <img src="pictures/outsidethewire.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title" style="font-size: 1.5em;">Outside the wire</h5>
-                            <a href="#" class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
+                            <a class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
                             <a class="btn btn-secondary" style="font-size: 1.2em;" onclick="ShowPopup(movies['outsidethewire'])">ⓘ Mehr Infos</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-sm">
-                    <div class="card" style="width: 22rem;">
+                    <div class="card movie">
                         <img src="pictures/projectpower.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title" style="font-size: 1.5em;">Project Power</h5>
-                            <a href="#" class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
+                            <a class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
                             <a class="btn btn-secondary" style="font-size: 1.2em;" onclick="ShowPopup(movies['projectpower'])">ⓘ Mehr Infos</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-sm">
-                    <div class="card" style="width: 22rem;">
+                    <div class="card movie">
                         <img src="pictures/sixunderground.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title" style="font-size: 1.5em;">6Underground</h5>
@@ -234,44 +234,44 @@
             <div class="row gx-0">
                 <h1 class="title">Für den Filmabend</h1>
                 <div class="col-sm">
-                    <div class="card" style="width: 22rem;">
+                    <div class="card movie">
                         <img src="pictures/spenserconfidential.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title" style="font-size: 1.5em;">Spenser Confidential</h5>
-                            <a href="#" class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
+                            <a class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
                             <a class="btn btn-secondary" style="font-size: 1.2em;" onclick="ShowPopup(movies['spenserconfidential'])">ⓘ Mehr Infos</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-sm">
-                    <div class="card" style="width: 22rem;">
+                    <div class="card movie">
                         <img src="pictures/theirishman.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title" style="font-size: 1.5em;">The Irishman</h5>
-                            <a href="#" class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
+                            <a class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
                             <a class="btn btn-secondary" style="font-size: 1.2em;" onclick="ShowPopup(movies['theirishman'])">ⓘ Mehr Infos</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-sm">
-                    <div class="card" style="width: 22rem;">
+                    <div class="card movie">
                         <img src="pictures/thekissingbooth.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title" style="font-size: 1.5em;">The Kissingbooth</h5>
-                            <a href="#" class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
+                            <a class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
                             <a class="btn btn-secondary" style="font-size: 1.2em;" onclick="ShowPopup(movies['thekissingbooth'])">ⓘ Mehr Infos</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-sm">
-                    <div class="card" style="width: 22rem;">
+                    <div class="card movie">
                         <img src="pictures/hausdesgeldes.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title" style="font-size: 1.5em;">Haus des Geldes</h5>
-                            <a href="#" class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
+                            <a class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
                             <a class="btn btn-secondary" style="font-size: 1.2em;" onclick="ShowPopup(movies['hausdesgeldes'])">ⓘ Mehr Infos</a>
                         </div>
                     </div>
@@ -283,44 +283,44 @@
             <div class="row gx-0">
                 <h1 class="title">Auf ins Ice Age</h1>
                 <div class="col-sm">
-                    <div class="card" style="width: 22rem;">
+                    <div class="card movie">
                         <img src="pictures/iceage1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title" style="font-size: 1.5em;">Ice Age</h5>
-                            <a href="#" class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
+                            <a class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
                             <a class="btn btn-secondary" style="font-size: 1.2em;" onclick="ShowPopup(movies['iceage1'])">ⓘ Mehr Infos</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-sm">
-                    <div class="card" style="width: 22rem;">
+                    <div class="card movie">
                         <img src="pictures/iceage2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title" style="font-size: 1.5em;">Ice Age 2</h5>
-                            <a href="#" class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
+                            <a class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
                             <a class="btn btn-secondary" style="font-size: 1.2em;" onclick="ShowPopup(movies['iceage2'])">ⓘ Mehr Infos</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-sm">
-                    <div class="card" style="width: 22rem;">
+                    <div class="card movie">
                         <img src="pictures/iceage3.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title" style="font-size: 1.5em;">Ice Age 3</h5>
-                            <a href="#" class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
+                            <a class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
                             <a class="btn btn-secondary" style="font-size: 1.2em;" onclick="ShowPopup(movies['iceage3'])">ⓘ Mehr Infos</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-sm">
-                    <div class="card" style="width: 22rem;">
+                    <div class="card movie">
                         <img src="pictures/iceage5.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title" style="font-size: 1.5em;">Ice Age 5</h5>
-                            <a href="#" class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
+                            <a class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
                             <a class="btn btn-secondary" style="font-size: 1.2em;" onclick="ShowPopup(movies['iceage5'])">ⓘ Mehr Infos</a>
                         </div>
                     </div>
@@ -332,44 +332,44 @@
             <div class="row gx-0">
                 <h1 class="title">Serienmarathon</h1>
                 <div class="col-sm">
-                    <div class="card" style="width: 22rem;">
+                    <div class="card movie">
                         <img src="pictures/therain.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title" style="font-size: 1.5em;">The Rain</h5>
-                            <a href="#" class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
+                            <a class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
                             <a class="btn btn-secondary" style="font-size: 1.2em;" onclick="ShowPopup(movies['therain'])">ⓘ Mehr Infos</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-sm">
-                    <div class="card" style="width: 22rem;">
+                    <div class="card movie">
                         <img src="pictures/aliceinborderland.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title" style="font-size: 1.5em;">Alice in Borderland</h5>
-                            <a href="#" class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
+                            <a class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
                             <a class="btn btn-secondary" style="font-size: 1.2em;" onclick="ShowPopup(movies['aliceinborderland'])">ⓘ Mehr Infos</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-sm">
-                    <div class="card" style="width: 22rem;">
+                    <div class="card movie">
                         <img src="pictures/sexeducation.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title" style="font-size: 1.5em;">Sex Education</h5>
-                            <a href="#" class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
+                            <a class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
                             <a class="btn btn-secondary" style="font-size: 1.2em;" onclick="ShowPopup(movies['sexeducation'])">ⓘ Mehr Infos</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-sm">
-                    <div class="card" style="width: 22rem;">
+                    <div class="card movie">
                         <img src="pictures/snowpiercer.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title" style="font-size: 1.5em;">Snowpiercer</h5>
-                            <a href="#" class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
+                            <a class="btn btn-primary" style="font-size: 1.2em;">▶︎ Abspielen</a>
                             <a class="btn btn-secondary" style="font-size: 1.2em;" onclick="ShowPopup(movies['snowpiercer'])">ⓘ Mehr Infos</a>
                         </div>
                     </div>

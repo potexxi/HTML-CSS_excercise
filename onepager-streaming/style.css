@@ -13,6 +13,15 @@ body{
     margin-top: 2%;
 }
 
+.text-animation{
+    font-size: 1.3em;
+    transition: all 0.4s ease;
+}
+
+.text-animation:hover{
+    font-size: 1.35em;
+}
+
 .title{
     font-size: 3em;
     color: rgb(255, 255, 255);
@@ -23,10 +32,12 @@ body{
 #background{
     margin-top: 5%;
     height: 95vh;
+    min-height: 300px;
     width: 92vw;
+    background-color: transparent;
     background:
         linear-gradient(
-        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.3),
         rgba(0, 0, 0, 1)
         ),
         url("pictures/badtrip.jpg");
@@ -36,12 +47,13 @@ body{
     border-top-right-radius: 25px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+    transition: all 0.5s ease;
 }
 
 #background:hover{
     background:
     linear-gradient(
-    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 1)
     ),
     url("pictures/badtrip.jpg");
@@ -49,9 +61,16 @@ body{
     height: 96vh;
     width: 93vw;
     margin-left: -0.5%;
+        box-shadow:
+        0 0 9px #444444,
+        0 0 19px #444444,
+        0 0 39px #444444,
+        0 0 79px #444444;
+    transition: all 0.2s ease;
 }
 
 #badtrip{
+    background-color: transparent;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -68,7 +87,7 @@ body{
     width: 70vw;
     margin-top: 10%;
     margin-left: 15%;
-    height: 60%;
+    height: 70%;
     background-color: #303030;
     color: white;
     z-index: 9999;
@@ -92,6 +111,24 @@ body{
 .card{
     background-color: #333333;
     color: white;
+    margin-top: 10px;
+    transition: all 0.2s ease;
+}
+
+.card:hover{
+    box-shadow:
+        0 0 6px #444444,
+        0 0 12px #444444,
+        0 0 24px #444444;
+    transition: all 0.2s ease;
+}
+
+#badtrip .card:hover{
+    box-shadow: none;
+}
+
+.movie{
+    width: 21rem;
 }
 
 @media (max-width: 1200px) {

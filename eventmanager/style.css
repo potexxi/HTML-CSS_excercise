@@ -1,0 +1,88 @@
+body{
+    background-color: black !important;
+}
+
+#navigation{
+    position: fixed;
+    width: 100vw;
+    z-index: 9999;
+}
+
+.header-text{
+    font-size: 1.2em !important;
+    transition: all 0.1s ease !important;
+}
+
+.header-text:hover{
+    font-size: 1.3em !important;
+    transition: all 0.1s ease;
+}
+
+.normal-text{
+    font-size: 1.2em;
+}
+
+#header-pic{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#welcome-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 103vh;
+    align-items: center;
+    color: white;
+    background:
+        linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 1)
+        ),
+        url("pictures/event.png");
+    background-size: cover;
+}
+
+#welcome-text{
+    width: 75%;
+}
+
+.card-img-top{
+    height: 210px;
+}
+
+#event-background{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#footer{
+    margin-top: 150px;
+}
+
+#search{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    color: white;
+    width: 94vw;
+    margin-left: 20px;
+}
+
+#search-bar{
+    height: 45px;
+    width: 300px;
+}
+
+.card{
+    transition: all 0.2s ease;
+}
+
+.card:hover{
+    box-shadow:
+        0 0 10px #444444,
+        0 0 16px #444444,
+        0 0 32px #444444;
+    transition: all 0.2s ease;
+}
